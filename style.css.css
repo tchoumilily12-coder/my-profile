@@ -1,0 +1,122 @@
+/* ===== Base styles ===== */
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(50, 50, 50);
+  margin: 0;
+}
+
+/* ===== Banner ===== */
+.bannr {
+  background-image: url("../codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.banner h1 {
+  font-family: 'Chivo', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.banner p {
+  font-size: 24px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* ===== Container ===== */
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+/* ===== Card ===== */
+.card-white {
+  background: white;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-white h2 {
+  font-family: 'Chivo', sans-serif;
+  color: rgb(80, 80, 80);
+  font-size: 28px;
+  margin-top: 0;
+}
+
+/* Lists without bullets */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Profile image */
+.img-circle {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Button */
+.btn-blue {
+  display: inline-block;
+  background-color: rgb(80, 120, 220);
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn-blue:hover {
+  background-color: rgb(60, 100, 200);
+}
+
+/* Inline social links */
+.list-inline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-inline li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.list-inline a {
+  color: rgb(100, 80, 200);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.list-inline a:hover {
+  text-decoration: underline;
+}
+
+.list-inline i {
+  margin-right: 6px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: rgb(40, 40, 40);
+  color: rgb(200, 200, 200);
+  text-align: center;
+  padding: 30px;
+  font-size: 16px;
+}
+
+
