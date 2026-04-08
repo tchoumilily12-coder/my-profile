@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lily Tchoumi</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --cream: #F7F4EF;
+      --dark: #1A1A1A;
+      --muted: #888;
+      --light-border: #E2DDD7;
+      --accent: #C9A96E;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: var(--dark);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      flex-shrink: 0;
+      border: 2px solid var(--light-border);
+    }
+
+    .header-text h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+    }
+
+    .header-text p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 4px;
+      letter-spacing: 0.3px;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.9rem;
+    }
+
+    .about {
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .exp-item {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--light-border);
+    }
+
+    .exp-item:first-child {
+      border-top: 1px solid var(--light-border);
+    }
+
+    .exp-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    .exp-title {
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .exp-date {
+      font-size: 0.72rem;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .exp-company {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pill {
+      font-size: 0.75rem;
+      color: #555;
+      border: 1px solid var(--light-border);
+      border-radius: 100px;
+      padding: 4px 13px;
+      background: white;
+      letter-spacing: 0.2px;
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--light-border);
+      font-size: 0.82rem;
+    }
+
+    .contact-row:first-child {
+      border-top: 1px solid var(--light-border);
+    }
+
+    .contact-key {
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+
+    .contact-val {
+      color: var(--dark);
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--accent);
+      margin: 0 0 2.5rem 0;
+      opacity: 0.6;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 4rem;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <img class="photo" src="photo_de_lily.jpg" alt="Lily Tchoumi">
+      <div class="header-text">
+        <h1>Lily Tchoumi</h1>
+        <p>Bachelor en Management · Audencia Business School</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <p class="section-label">À propos</p>
+      <p class="about">Étudiante en management passionnée par le commerce et la relation humaine, je construis mon parcours au fil d'expériences variées qui m'ont appris à m'adapter, à convaincre et à évoluer dans des environnements exigeants. Curieuse, dynamique et toujours en mouvement, je crois que chaque expérience est une occasion d'apprendre quelque chose de nouveau sur soi et sur le monde.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">Expériences</p>
+
+      <div class="exp-item">
+        <div class="exp-row">
+          <span class="exp-title">Conseillère de vente</span>
+          <span class="exp-date">2026 – aujourd'hui</span>
+        </div>
+        <p class="exp-company">Le Bon Marché · Paris</p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-row">
+          <span class="exp-title">Stagiaire en assurance</span>
+          <span class="exp-date">Oct 2025 – Jan 2026</span>
+        </div>
+        <p class="exp-company">Willis Towers Watson · Douala, Cameroun</p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-row">
+          <span class="exp-title">Conseillère de vente</span>
+          <span class="exp-date">Juin – Août 2025</span>
+        </div>
+        <p class="exp-company">Groupe Calzedonia (Tezenis) · La Défense</p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-row">
+          <span class="exp-title">Maître d'hôtel</span>
+          <span class="exp-date">Juin – Juil 2025</span>
+        </div>
+        <p class="exp-company">Groupe Butard Paris · Madeleine</p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-row">
+          <span class="exp-title">Stagiaire commerciale</span>
+          <span class="exp-date">Déc 2024 – Fév 2025</span>
+        </div>
+        <p class="exp-company">Dr Martens Airwair France · La Défense</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="section-label">Compétences</p>
+      <div class="pill-group">
+        <span class="pill">Négociation</span>
+        <span class="pill">Relation client</span>
+        <span class="pill">Autonomie</span>
+        <span class="pill">Esprit d'équipe</span>
+        <span class="pill">Techniques de vente</span>
+        <span class="pill">Merchandising</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="section-label">Langues</p>
+      <div class="pill-group">
+        <span class="pill">Français · Natif</span>
+        <span class="pill">Anglais · Courant</span>
+        <span class="pill">Espagnol · Intermédiaire</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="section-label">Loisirs</p>
+      <p class="about">Le sport fait partie de mon quotidien — il m'apporte l'énergie et la discipline qui me suivent partout. La musique est mon autre univers, celui où je me ressource. J'aime voyager, découvrir de nouvelles cultures et me laisser surprendre par des endroits inconnus. Le cinéma complète le tableau : j'adore les histoires qui font réfléchir longtemps après la fin.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">Contact</p>
+      <div class="contact-row">
+        <span class="contact-key">Téléphone</span>
+        <span class="contact-val">+33 7 59 24 62 52</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-key">Email</span>
+        <span class="contact-val">tchoumilily12@gmail.com</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-key">Adresse</span>
+        <span class="contact-val">Montlignon, 95680</span>
+      </div>
+    </div>
+
+    <p class="footer">LILY TCHOUMI · 2026</p>
+
+  </div>
+</body>
+</html>
